@@ -205,6 +205,7 @@ main{
     cursor: pointer;
     overflow-y: hidden;
     transition: 500ms;
+    padding: 10px 0px;
     img{
         width: 70%;
         height: auto;

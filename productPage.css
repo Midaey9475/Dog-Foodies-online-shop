@@ -116,6 +116,7 @@ main{
     font-family: var(--mainfont);
     font-size: 18px;
     font-weight: 500;
+    padding: 10px 0px;
     img{
         width: 70%;
         height: auto;
