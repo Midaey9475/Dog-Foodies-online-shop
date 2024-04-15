@@ -344,7 +344,7 @@ footer{
         z-index: 10;
     }
     section{
-        padding: 20px;
+        padding: 20px 0px;
         .blurCover{
             display: block;
         }
@@ -386,6 +386,7 @@ footer{
     section{
         align-items: center;
         justify-content: center;
+        padding: 10px 0px;
         .Herotxt{
             line-height: 5em;
             h1{
