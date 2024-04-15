@@ -103,7 +103,7 @@ main{
     perspective: 350px;
 }
 #products{
-    height: 400px;
+    min-height: 400px;
     width: inherit;
     border: 1px solid rgb(194, 194, 194);
     box-shadow: 0px 0px 15px .5px rgb(219, 219, 219);
