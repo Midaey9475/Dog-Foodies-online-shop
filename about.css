@@ -120,6 +120,9 @@ main{
     line-height: 2.3rem;
     text-align: center;
     color: rgb(7, 7, 212);
+    b{
+        color: #fb8a22; font-size: 25px;
+    }
 }
 .aboutImage{
     height: 100% auto;
@@ -189,6 +192,12 @@ footer{
     .about{
         position: relative;
         width: 80%;
+        p{
+            color: #fb8a22;
+            b{
+                color: blue;
+            }
+        }
     }
     .aboutImage{
         width: 100%;
