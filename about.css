@@ -192,6 +192,7 @@ footer{
     .about{
         position: relative;
         width: 80%;
+        background-color: rgba(255, 255, 255, 0.5);
         p{
             color: #fb8a22;
             b{
