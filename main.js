@@ -1,5 +1,5 @@
 var myCrt = document.getElementById('addCart')
 var addcrt = document.getElementById('addCrt')
-addcrt.onclick = function(){
-    myCrt.innerHTML = Number(myCrt.innerHTML) + 1
+function adCrt(value){
+    myCrt.innerHTML = eval(Number(myCrt.innerHTML)  + Number(value));
 }
