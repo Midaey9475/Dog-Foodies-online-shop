@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 :root{
     --mainfont: "Protest Strike", sans-serif;
+}
+body{
+    overflow-x: hidden;
 }
 nav{
     height: 70px;
@@ -80,6 +82,19 @@ li:hover{
         justify-content: center;
         color: white;
         font-family: var(--mainfont);
+        flex-shrink: 0;
+    }
+}
+#hamburger{
+    height: 100%;
+    width: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img{
+        width: 100%;
+        height: auto;
     }
 }
 main{
@@ -218,5 +233,64 @@ footer{
     }
     i:hover{
         color: rgb(7, 7, 212);
+    }
+}
+@media all and (max-width: 1024px) {
+    nav{
+        z-index: 10;
+    }
+}
+@media all and (max-width: 768px) {
+    body{
+        font-size: auto;
+    }
+    nav{
+        padding: 0px 40px;
+        .navMenu{
+            display: none;
+        }
+        #hamburger{
+            display: grid;
+        }
+    }
+    .rightsReserved{
+        padding: 0px 20px;
+    }
+}
+@media all and (max-width: 574px) {
+    nav{
+        padding: 0px 15px;
+        padding-left: 30px;
+    }
+    main{
+        row-gap: 25px;
+        #perspective{
+            height: fit-content;
+            width: 95%;
+        }
+    }
+    footer{
+        .footerContent{
+            display: flex;
+            ul{
+                width: 50%;
+                gap: 20px;
+                font-size: 10px;
+                margin: 20px;
+            }
+        }
+        .rightsReserved{
+            height: 50px;
+            padding: 0px 10px;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        .mediaIcon{
+            display: flex;
+            column-gap: 10px;
+            a{
+                font-size: 10px;
+            }
+        }
     }
 }

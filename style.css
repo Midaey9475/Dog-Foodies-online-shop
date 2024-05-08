@@ -6,6 +6,9 @@
 :root{
     --mainfont: "Protest Strike", sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 nav{
     position: fixed;
     height: 70px;
