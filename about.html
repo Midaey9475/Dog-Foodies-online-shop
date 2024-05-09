@@ -26,9 +26,20 @@
             <div id="addCart">0</div>
         </div>
         <div id="hamburger">
-            <img src="menu.png" alt="">
+            <img id="burgerMenu" onclick="openMenu()" src="menu.png" alt="menu">
+            <img id="closeMenu" onclick="closeburgerMenu()" src="close.png" alt="close">
         </div>
     </nav>
+    <div id="burgerDrop">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="allProducts.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="Location.html">Location</a>
+            </li>
+        </ul>
+    </div>
     <main>
         <div class="about">
             <p>
@@ -62,5 +73,8 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="main.js"></script>
 </body>
 </html>

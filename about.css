@@ -97,6 +97,30 @@ li:hover{
         width: 100%;
         height: auto;
     }
+    #closeMenu{
+        display: none;
+    }
+}
+#burgerDrop{
+    position: relative;
+    height: fit-content;
+    position: relative;
+    top: 75px;
+    display: none;
+    transition: 1s;
+    ul, li{
+        display: grid;
+        a{
+            margin: 5px;
+            text-decoration: none;
+            font-family: var(--mainfont);
+            padding: 4px;
+            border-bottom: 1px solid #fb8a22;
+        }
+    }
+}
+#burgerDrop ul li a:hover{
+    color: #fb8a22;
 }
 main{
     width: 100%;
