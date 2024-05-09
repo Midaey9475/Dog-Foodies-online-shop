@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-brands/css/uicons-brands.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-straight/css/uicons-bold-straight.css'>
 </head>
 <body>
     <nav>
@@ -27,9 +28,19 @@
             <div id="addCart">0</div>
         </div>
         <div id="hamburger">
-            <img src="menu.png" alt="">
+            <img id="burgerMenu" onclick="openMenu()" src="menu.png" alt="menu">
+            <img id="closeMenu" onclick="closeburgerMenu()" src="close.png" alt="close">
         </div>
     </nav>
+    <div id="burgerDrop">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="allProducts.html">Products</a>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
 
     <main>
         <div id="perspective">
