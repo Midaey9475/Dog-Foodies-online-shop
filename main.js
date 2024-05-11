@@ -11,11 +11,12 @@ var burgerDrop = document.getElementById('burgerDrop')
 
 function openMenu(){
     burgerDrop.style.display = 'grid'
+    burgerDrop.style.scale = '1'
     burgerMenu.style.display = 'none'
     closeMenu.style.display = 'block'
 }
 function closeburgerMenu(){
-    burgerDrop.style.display = 'none'
+    burgerDrop.style.scale = '0'
     burgerMenu.style.display = 'grid'
     closeMenu.style.display = 'none'
 }

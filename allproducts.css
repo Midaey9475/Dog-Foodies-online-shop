@@ -103,11 +103,14 @@ li:hover{
 }
 #burgerDrop{
     position: relative;
-    height: fit-content;
-    position: relative;
-    top: 75px;
-    display: none;
+    scale: 0;
+    position: fixed;
+    top: 70px;
+    transition: scale 1s;
+    background-color: #fb8a22;
     transition: 1s;
+    z-index: 10;
+    width: 100%;
     ul, li{
         display: grid;
         a{
@@ -115,7 +118,8 @@ li:hover{
             text-decoration: none;
             font-family: var(--mainfont);
             padding: 4px;
-            border-bottom: 1px solid #fb8a22;
+            border-bottom: 1px solid #fff;
+            color: #fff;
         }
     }
 }
