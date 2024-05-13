@@ -276,3 +276,33 @@ footer{
         }
     }
 }
+@media all and (max-width: 574px) {
+    nav{
+        padding: 0px 15px;
+        padding-left: 30px;
+    }
+    footer{
+        .footerContent{
+            display: flex;
+            ul{
+                width: 50%;
+                gap: 20px;
+                font-size: 10px;
+                margin: 20px;
+            }
+        }
+        .rightsReserved{
+            height: 50px;
+            padding: 0px 10px;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        .mediaIcon{
+            display: flex;
+            column-gap: 10px;
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+}
