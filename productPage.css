@@ -79,7 +79,48 @@ li:hover{
         justify-content: center;
         color: white;
         font-family: var(--mainfont);
+        flex-shrink: 0;
     }
+}
+#hamburger{
+    height: 100%;
+    width: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    #closeMenu{
+        display: none;
+    }
+}
+#burgerDrop{
+    position: relative;
+    scale: 0;
+    position: fixed;
+    top: 70px;
+    transition: scale 1s;
+    z-index: 10;
+    background-color: #fb8a22;
+    width: 100%;
+    ul, li{
+        display: grid;
+
+        a{
+            margin: 5px;
+            text-decoration: none;
+            font-family: var(--mainfont);
+            padding: 5px;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
+#burgerDrop ul li a:hover{
+    color: blue;
 }
 main{
     min-height: 70vh;
@@ -99,7 +140,7 @@ main{
     perspective: 350px;
 }
 .proPic{
-    min-height: 400px;
+    max-height: 400px;
     width: 100%;
     border: 1px solid rgb(194, 194, 194);
     box-shadow: 0px 0px 15px .5px rgb(219, 219, 219);
@@ -132,20 +173,13 @@ main{
         font-size: 22px;
     }
 }
-main .proPicPerspective .proPic:hover{
-    transform: rotateY(0deg);
-    background: linear-gradient(10deg, #fb8a22 10%, #f39a46 20%, #fcf1e8 100%);
-    box-shadow: 0px 0px 15px 1px #f7a960;
-    color: white;
-}
 .proDetails{
-    /* border: 1px solid red; */
     width: 45%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     font-family: var(--mainfont);
-    padding: 10px;
+    padding: 20px 10px;
     gap: 20px;
     & div{
         height: fit-content;
@@ -160,7 +194,7 @@ main .proPicPerspective .proPic:hover{
         }
     }
     button{
-        margin-top: 100px;
+        margin-top: 80px;
         padding: 10px;
         width: 30%;
         border: 1px solid silver;
@@ -230,5 +264,95 @@ footer{
     }
     i:hover{
         color: rgb(7, 7, 212);
+    }
+}
+@media all and (max-width: 1024px) {
+    main{
+        min-height: fit-content;
+        padding: 50px 0px;
+    }
+    
+}
+@media all and (max-width: 768px) {
+    nav{
+        padding: 0px 40px;
+        .navMenu{
+            display: none;
+        }
+        #hamburger{
+            display: grid;
+        }
+    }
+    main{
+        min-height: 70vh;
+        padding: 10px;
+        row-gap: 25px;
+        align-items: center;
+        justify-content: center;
+        .proPicPerspective{
+            width: 90%;
+        }
+        .proDetails{
+            width: 90%;
+            padding: 0px;
+            button{
+                width: 50%;
+                margin-top: 30px;
+            }
+        }
+    }
+    footer{
+        .footerContent{
+            display: flex;
+            ul{
+                width: 50%;
+                gap: 20px;
+                font-size: 10px;
+                margin: 20px;
+            }
+        }
+        .rightsReserved{
+            height: 50px;
+            padding: 0px 10px;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        .mediaIcon{
+            display: flex;
+            column-gap: 10px;
+            a{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media all and (max-width: 574px) {
+    nav{
+        padding: 0px 15px;
+        padding-left: 30px;
+    }
+    footer{
+        .footerContent{
+            display: flex;
+            ul{
+                width: 50%;
+                gap: 20px;
+                font-size: 10px;
+                margin: 20px;
+            }
+        }
+        .rightsReserved{
+            height: 50px;
+            padding: 0px 10px;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        .mediaIcon{
+            display: flex;
+            column-gap: 10px;
+            a{
+                font-size: 10px;
+            }
+        }
     }
 }

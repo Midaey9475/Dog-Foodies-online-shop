@@ -101,7 +101,6 @@ li:hover{
     }
 }
 #burgerDrop{
-    position: relative;
     scale: 0;
     position: fixed;
     top: 70px;
@@ -132,12 +131,14 @@ section{
     display: flex;
     padding: 5px;
     padding-right: 10px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .blurCover{
     height: 100%;
+    width: 100%;
     position: absolute;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
     display: none;
 }
 .Herotxt{
@@ -183,10 +184,13 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    img{
+    #heroImg{
         z-index: -1;
-        width: auto;
-        height: 80%;
+        width: 70%;
+        height: 100%;
+        /* border: 1px solid red; */
+        background-image: url(dogSketch-.png);
+        background-size: cover;
         display: block;
     }
 }
@@ -392,6 +396,10 @@ footer{
         }
         .heroImgContainer{
             position: inherit;
+            #heroImg{
+                width: 100%;
+                height: 70%;
+            }
         }
     }
     header{
@@ -421,12 +429,6 @@ footer{
             }
             button{
                 bottom: 25%;
-            }
-        }
-        .heroImgContainer{
-            img{
-                height: 100%;
-                width: auto;
             }
         }
     }
@@ -467,9 +469,9 @@ footer{
             }
         }
         .heroImgContainer{
-           img{
+           #heroImg{
             width: 100%;
-            height: auto;
+            height: 60%;
            }
         }
     }

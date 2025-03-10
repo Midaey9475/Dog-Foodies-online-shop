@@ -20,3 +20,25 @@ function closeburgerMenu(){
     burgerMenu.style.display = 'grid'
     closeMenu.style.display = 'none'
 }
+
+var heroImage = document.getElementById('heroImg')
+
+setInterval(function(){
+    heroImage.style.backgroundImage = 'url(dogSketch1.png)'
+    setInterval(function(){
+        heroImage.style.backgroundImage = 'url(dogSketch3.png)';
+        setInterval(function(){
+            heroImage.style.backgroundImage = 'url(dogSketch4-.png)';
+            setInterval(function(){
+                heroImage.style.backgroundImage = 'url(dogSketch5.png)'
+            }, 2000)
+        }, 2000)
+    }, 2000)
+}, 2000)
+
+
+
+
+function aboutProduct(){
+    location.href = 'productPage.html'
+}

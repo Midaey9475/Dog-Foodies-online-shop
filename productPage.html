@@ -28,7 +28,21 @@
             <img src="shopping-cart.png" alt="">
             <div id="addCart">0</div>
         </div>
+        <div id="hamburger">
+            <img id="burgerMenu" onclick="openMenu()" src="menu.png" alt="menu">
+            <img id="closeMenu" onclick="closeburgerMenu()" src="close.png" alt="close">
+        </div>
     </nav>
+    <div id="burgerDrop">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+                <a href="allProducts.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="Location.html">Location</a>
+            </li>
+        </ul>
+    </div>
 
     <main>
         <div class="proPicPerspective">
@@ -57,7 +71,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, in quaerat? Non voluptatem quae odit, nobis quas enim nihil velit magni atque quibusdam itaque at quidem assumenda minus. Quibusdam, dolor accusantium. Illum vitae velit molestias repellat, consequatur placeat odio hic, nihil eligendi repellendus laborum fuga. Aspernatur quis ducimus iusto quod.
                 </p>
             </div> 
-            <button>Add Cart</button>
+            <button onclick="adCrt('1')">Add Cart</button>
         </div>
     </main>
     <footer>
@@ -78,6 +92,7 @@
             </div>
         </div>
     </footer>
-    
+
+<script src="main.js"></script>    
 </body>
 </html>
