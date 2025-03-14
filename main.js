@@ -23,18 +23,31 @@ function closeburgerMenu(){
 
 var heroImage = document.getElementById('heroImg')
 
+const pictureArray = ["url(dogSketch1.png)", "url(dogSketch3.png)", "url(dogSketch4-.png)", "url(dogSketch5.png)"]
+
+
+let q = -1
+
 setInterval(function(){
-    heroImage.style.backgroundImage = 'url(dogSketch1.png)'
-    setInterval(function(){
-        heroImage.style.backgroundImage = 'url(dogSketch3.png)';
-        setInterval(function(){
-            heroImage.style.backgroundImage = 'url(dogSketch4-.png)';
-            setInterval(function(){
-                heroImage.style.backgroundImage = 'url(dogSketch5.png)'
-            }, 2000)
-        }, 2000)
-    }, 2000)
-}, 2000)
+    if(q < pictureArray.length){
+        q++
+    }
+    if(q === pictureArray.length){ q = 0 }
+    heroImage.style.backgroundImage = pictureArray[q]
+},2000)
+
+// setInterval(function(){
+//     heroImage.style.backgroundImage = 'url(dogSketch1.png)'
+//     setInterval(function(){
+//         heroImage.style.backgroundImage = 'url(dogSketch3.png)';
+//         setInterval(function(){
+//             heroImage.style.backgroundImage = 'url(dogSketch4-.png)';
+//             setInterval(function(){
+//                 heroImage.style.backgroundImage = 'url(dogSketch5.png)'
+//             }, 2000)
+//         }, 2000)
+//     }, 2000)
+// }, 2000)
 
 
 
